@@ -1043,10 +1043,15 @@ body.hide {
   padding: 68px 0;
   gap: 32px;
 }
+@media (max-width: 768px) {
+  .service-items {
+    gap: 16px;
+  }
+}
 .service-items--block-wrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(5, 2.4fr);
+  grid-template-columns: repeat(5, 4fr);
 }
 .service-items--block {
   width: 1930px;
@@ -1066,11 +1071,40 @@ body.hide {
   background: #fff;
   width: 356px;
 }
+@media (max-width: 1024px) {
+  .service-item {
+    padding: 12px;
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .service-item {
+    width: 230px;
+  }
+}
+@media (max-width: 550px) {
+  .service-item {
+    padding: 8px;
+    width: 160px;
+  }
+}
 .service-item p {
   font-weight: 800;
   font-size: 28px;
   line-height: 40px;
   margin-left: 12px;
+}
+@media (max-width: 1024px) {
+  .service-item p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .service-item p {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 .service-sub {
   font-weight: 600;
@@ -2805,6 +2839,23 @@ marquee {
   white-space: nowrap;
   -webkit-animation: rightThenLeft 4s linear;
   width: 2000px;
+}
+@media (max-width: 1024px) {
+  marquee {
+    width: 1700px;
+    margin-left: -200px;
+  }
+}
+@media (max-width: 768px) {
+  marquee {
+    width: 1300px;
+  }
+}
+@media (max-width: 550px) {
+  marquee {
+    width: 1000px;
+    margin-left: -300px;
+  }
 }
 marquee .service-items--block {
   width: 100%;
